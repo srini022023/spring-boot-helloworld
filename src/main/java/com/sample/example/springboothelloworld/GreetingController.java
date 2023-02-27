@@ -12,6 +12,6 @@ public class GreetingController {
 
     @GetMapping("/hello")
     public String hello() {
-        return "Hello World! Your application is running";
+        return "Hey Greetings API, you are too good";
     }
 }

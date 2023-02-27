@@ -20,6 +20,8 @@ ARG JAR_NAME="spring-boot-helloworld"
 
 WORKDIR /usr/src/app
 
-COPY --from=build /usr/src/app/target/${JAR_NAME}.jar ./app.jar
+COPY --from=build /usr/src/app/target/spring-boot-helloworld-0.0.1-SNAPSHOT.jar ./app.jar
+
+
 
 CMD ["java","-jar", "./app.jar"]
